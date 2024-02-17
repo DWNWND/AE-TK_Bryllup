@@ -4,12 +4,29 @@
 // Bootstrap main file
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+main {
+  height: 100%;
+  background: linear-gradient(0deg, #888371 0%, #686454 51%, #535045 85%);
+}
+
 .navbar {
   z-index: 1;
 }
 
 .header-svg {
   max-width: 450px;
+  width: 90vw;
+}
+
+.navbar-toggler {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.nav-container {
+  min-height: 35px;
 }
 
 .nav-item a {
@@ -104,4 +121,9 @@ hr {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.footer-logo {
+  width: 70vw;
+  max-width: 200px;
 }
