@@ -5,86 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrea & Torjus</title>
     <meta name="description" content="Andrea og Torjus abc..." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/dist/css/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script defer type="module" src="/index.js"></script>
   </head>
-  <body>
-    <header class="header-background-img">
-      <h1></h1>
-      <span></span>
-      <h1></h1>
-      <div></div>
-      <date></date>
-    </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <body class="bg-green-bg">
+    <nav class="navbar navbar-expand-sm bg-green-bg position-fixed w-100">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-nav d-flex gap-md-5">
             <li class="nav-item"><a href="#rsvp" class="nav-link">RSVP</a></li>
             <li class="nav-item"><a href="#dresscode" class="nav-link">DRESSCODE</a></li>
             <li class="nav-item"><a href="#program" class="nav-link">PROGRAM</a></li>
-            <li class="nav-item"><a href="#adresse" class="nav-link">ADRESSE</a></li>
             <li class="nav-item"><a href="#overnatting" class="nav-link">OVERNATTING</a></li>
+            <li class="nav-item"><a href="#kart" class="nav-link">KART</a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <header>
+      <div class="container d-flex justify-content-center vh-100"><img src="/img/header.svg" class="img-fluid header-svg p-5" alt="..." /></div>
+    </header>
     <main>
-      <div class="container">
-        <div class="card" id="rsvp">
-          <h1>RSVP</h1>
-          <p>Vennligs svar med hvor mange du/dere blir og eventuelle diettmessige restriksjoner.</p>
-          <p>Send svaret ditt på melding eller epost til Andrea</p>
-          <p class="h2"><strong>innen 25. april</strong></p>
+      <div class="container d-flex flex-column gap-5">
+        <div class="container vh-100 d-flex justify-content-center" id="rsvp">
+          <div class="content d-flex flex-column text-center align-self-center">
+            <h1>RSVP</h1>
+            <hr />
+            <p class="reveal">Vennligs svar med hvor mange du/dere blir og eventuelle diettmessige restriksjoner.</p>
+            <p class="reveal">Send svaret ditt på melding eller epost til Andrea</p>
+            <p class="stor reveal"><strong>innen 25. april</strong></p>
+          </div>
         </div>
-        <div class="card" id="dresscode">
-          <h1>DRESSCODE</h1>
-          <p class="h2"><strong>sort dress og kjole</strong></p>
+        <div class="container d-flex justify-content-center vh-100" id="dresscode">
+          <div class="content d-flex flex-column text-center align-self-center">
+            <h1>DRESSCODE</h1>
+            <hr />
+            <p class="reveal">dress og kjole</p>
+          </div>
         </div>
-        <div class="card" id="program">
-          <h1>PROGRAM</h1>
-          <div>
-            <time>kl.14:00</time>
-            <div>
-              <p><strong>Vielse</strong></p>
-              <p><i>Hamar Domkirke</i></p>
+        <div class="container d-flex justify-content-center vh-100" id="program">
+          <div class="content d-flex flex-column text-center align-self-center">
+            <h1 class="text-center">PROGRAM</h1>
+            <hr />
+            <div class="row pb-4 pt-4 reveal">
+              <div class="col text-end d-flex flex-column justify-content-between pt-3 pb-3">
+                <div class="time">
+                  <time>kl.14:00</time>
+                </div>
+                <div class="event">
+                  <p><strong>Fest</strong></p>
+                  <p><i>Bryhni Søndre</i></p>
+                  <p><i>Brynivegen 53, 2335 Stange, Norway</i></p>
+                </div>
+              </div>
+              <div class="col-auto d-flex">
+                <div class="dot dot1"></div>
+                <div class="line"></div>
+                <div class="dot dot2"></div>
+              </div>
+              <div class="col text-start d-flex flex-column justify-content-between pt-3 pb-3">
+                <div class="event">
+                  <p><strong>Vielse</strong></p>
+                  <p><i>Hamar Domkirke</i></p>
+                  <p><i>Kirkebakken 14, 2317 Hamar, Norway</i></p>
+                </div>
+                <div class="time">
+                  <time>kl.19:00</time>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div>
-            <div>
-              <p><strong>Fest</strong></p>
-              <p><i>Bryhni Søndre</i></p>
-            </div>
-            <time>kl.19:00</time>
-          </div>
-          <img src="" class="flower" alt="" />
         </div>
-        <div class="card" id="adresse">
-          <h1>ADRESSE</h1>
-          <div>
-            <p><strong>Hamar Domkirke:</strong></p>
-            <p><i>Kirkebakken 14, 2317 Hamar, Norway</i></p>
-          </div>
-          <div>
-            <p><strong>Bryhni Søndre:</strong></p>
-            <p><i>Brynivegen 53, 2335 Stange, Norway</i></p>
+        <div class="container d-flex flex-column vh-100 justify-content-center" id="overnatting">
+          <div class="content d-flex flex-column text-center align-self-center">
+            <h1>OVERNATTING</h1>
+            <hr />
+            <p class="reveal">For dere som kommer langveis fra er det mulig overnatting på:</p>
           </div>
         </div>
-        <div class="card" id="overnatting">
-          <h1>OVERNATTING</h1>
-          <p>For dere som kommer langveis fra er det mulig overnatting på:</p>
-          <ul>
-            <li class="overnatting"></li>
-            <li class="overnatting"></li>
-            <li class="overnatting"></li>
-          </ul>
+      </div>
+      <div class="d-flex vh-100 justify-content-center w-100" id="kart">
+        <!-- https://developers.google.com/maps/documentation/embed/quickstart -->
+        <div style="-webkit-filter: grayscale(100%); filter: grayscale(100%)" class="align-self-center w-100">
+          <iframe width="100%" height="450" style="border: 0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqax3QDzhQUYRQtkykWmbRjU&key=AIzaSyCrta3raAZ9E_72R8NUzEgdsWUnKrkbHNs"></iframe>
         </div>
       </div>
     </main>
