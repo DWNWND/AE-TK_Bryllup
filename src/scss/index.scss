@@ -3,3 +3,105 @@
 
 // Bootstrap main file
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  z-index: 1;
+}
+
+.header-svg {
+  max-width: 450px;
+}
+
+.nav-item a {
+  color: #ffffff;
+}
+
+.custom-nav {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.5rem;
+}
+
+h1 {
+  // padding-top: 150px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: #ffffff;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+}
+
+p,
+li {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+  color: #ffffff;
+}
+
+.stor {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+p {
+  font-weight: 200;
+  margin: 0;
+}
+
+hr {
+  height: 1px;
+  opacity: 1;
+  width: 100px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #ffffff;
+  align-self: center;
+}
+
+.line {
+  border-left: 1px solid #ffffff;
+  height: 250px;
+  align-self: center;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dot1 {
+  top: 27px;
+  left: 4px;
+}
+
+.dot2 {
+  top: 170px;
+  right: 4px;
+}
+
+.event,
+.time {
+  height: 70px;
+  color: #ffffff;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
