@@ -11857,7 +11857,7 @@ textarea.form-control-lg {
 }
 main {
   height: 100%;
-  background: linear-gradient(0deg, #888371 0%, #686454 51%, #535045 85%);
+  background-color: #535045;
 }
 
 .navbar {
