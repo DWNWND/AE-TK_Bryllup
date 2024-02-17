@@ -11855,12 +11855,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+main {
+  height: 100%;
+  background-color: #535045;
+}
+
 .navbar {
   z-index: 1;
 }
 
 .header-svg {
   max-width: 450px;
+  width: 90vw;
+}
+
+.navbar-toggler {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.nav-container {
+  min-height: 35px;
 }
 
 .nav-item a {
@@ -11954,6 +11971,11 @@ hr {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.footer-logo {
+  width: 70vw;
+  max-width: 200px;
 }
 
 /*# sourceMappingURL=index.css.map */
