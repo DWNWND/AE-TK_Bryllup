@@ -11974,6 +11974,7 @@ main {
 .header-svg {
   max-width: 450px;
   width: 90vw;
+  padding: 0 2rem 2rem 2rem;
   margin-bottom: 25px;
 }
 
@@ -12200,9 +12201,6 @@ header {
 }
 
 @media (min-width: 576px) {
-  .header-svg {
-    margin-top: 50px;
-  }
   .next {
     display: none;
   }

@@ -29,6 +29,7 @@ main {
   max-width: 450px;
   width: 90vw;
   // min-height: 50vh;
+  padding: 0 2rem 2rem 2rem;
   margin-bottom: 25px;
 }
 
@@ -260,9 +261,9 @@ header {
   display: block;
 }
 @media (min-width: 576px) {
-  .header-svg {
-    margin-top: 50px;
-  }
+  // .header-svg {
+  //   margin-top: 50px;
+  // }
 
   .next {
     display: none;
