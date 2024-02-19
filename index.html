@@ -14,97 +14,144 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/dist/css/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script defer type="module" src="/index.js"></script>
   </head>
   <body class="">
-    <nav class="navbar navbar-expand-sm bg-green-bg position-fixed w-100">
+    <nav class="navbar navbar-expand-sm bg-white-bg position-fixed w-100">
       <div class="container-fluid nav-container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-lg-0 custom-nav d-flex gap-md-5">
-            <li class="nav-item"><a href="#rsvp" class="nav-link">RSVP</a></li>
-            <li class="nav-item"><a href="#dresscode" class="nav-link">DRESSCODE</a></li>
-            <li class="nav-item"><a href="#program" class="nav-link">PROGRAM</a></li>
-            <li class="nav-item"><a href="#overnatting" class="nav-link">OVERNATTING</a></li>
-            <li class="nav-item"><a href="#kart" class="nav-link">KART</a></li>
+          <ul class="navbar-nav me-auto mb-lg-0 custom-nav d-flex gap-0 gap-md-2 gap-lg-3 gap-xl-5 flex-wrap justify-content-center align-content-center text-center">
+            <li class="nav-item"><a href="#rsvp" class="nav-link hover-underline-animation rsvp">RSVP</a></li>
+            <li class="nav-item"><a href="#program" class="nav-link hover-underline-animation program">PROGRAM</a></li>
+            <li class="nav-item"><a href="#overnatting" class="nav-link hover-underline-animation overnatting">OVERNATTING</a></li>
+            <li class="nav-item"><a href="#dresscode" class="nav-link hover-underline-animation dresscode">DRESSCODE</a></li>
+            <li class="nav-item"><a href="#gaveønsker" class="nav-link hover-underline-animation gaveønsker">GAVEØNSKER</a></li>
+            <li class="nav-item"><a href="#kart" class="nav-link hover-underline-animation kart">KART</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <main>
-      <header>
-        <div class="container d-flex justify-content-center vh-100"><img src="/img/header.svg" class="img-fluid header-svg p-5" alt="..." /></div>
+      <header class="vh-100 min-h-500">
+        <div class="container d-flex flex-column justify-content-center align-content-center">
+          <img src="/img/header.svg" class="img-fluid header-svg p-5 align-self-center" alt="..." />
+          <div class="d-flex flex-column text-center align-self-center gap-3 content">
+            <p class="invitasjon">Vi har gleden av å invitere dere til vårt bryllup 22.06.2024 i Hamar domkirke klokken 12.00.</p>
+            <p class="invitasjon">Middag og etterfølgende fest arrangeres på Bryhni Søndre kl. 17.00. Dere er velkomne til mottakelse i lokalet etter vielsen hvor det vil bli servert apertif og enkelt servering før middag.</p>
+            <p class="invitasjon-strong"><strong>Gleder oss veldig til å feire dagen sammen med dere.</strong></p>
+          </div>
+          <div class="reveal pil align-self-center">
+            <a href="#rsvp" class="next"><span></span></a>
+          </div>
+        </div>
       </header>
-      <div class="container d-flex flex-column gap-5">
-        <div class="container vh-100 d-flex justify-content-center" id="rsvp">
-          <div class="content d-flex flex-column text-center align-self-center">
-            <h1>RSVP</h1>
-            <hr />
-            <p class="reveal">Vennligs svar med hvor mange du/dere blir og eventuelle diettmessige restriksjoner.</p>
-            <p class="reveal">Send svaret ditt på melding eller epost til Andrea</p>
-            <p class="stor reveal"><strong>innen 25. april</strong></p>
-          </div>
+      <div class="section container vh-100 min-h-500 d-flex flex-column justify-content-center mt-5 mb-5" id="rsvp">
+        <div class="content d-flex flex-column text-center align-self-center">
+          <h1>RSVP</h1>
+          <hr />
+          <p class="reveal">Svar på hvor mange dere blir ønskes <strong>innen 22.04.2024</strong> og kan sendes til Torjus (tlf. 932 66 653) eller Andrea (tlf. 959 60 264). Gi gerne beskjed dersom det er allergier eller annet vi må ta hensyn til.</p>
         </div>
-        <div class="container d-flex justify-content-center vh-100" id="dresscode">
-          <div class="content d-flex flex-column text-center align-self-center">
-            <h1>DRESSCODE</h1>
-            <hr />
-            <p class="reveal">dress og kjole</p>
-          </div>
+        <div class="reveal pil align-self-center">
+          <a href="#program" class="next"><span></span></a>
         </div>
-        <div class="container d-flex justify-content-center vh-100" id="program">
-          <div class="content d-flex flex-column text-center align-self-center">
-            <h1 class="text-center">PROGRAM</h1>
-            <hr />
-            <div class="row pb-4 pt-4 reveal">
-              <div class="col text-end d-flex flex-column justify-content-between pt-3 pb-3">
-                <div class="time">
-                  <time>kl.14:00</time>
-                </div>
-                <div class="event">
-                  <p><strong>Fest</strong></p>
-                  <p><i>Bryhni Søndre</i></p>
-                  <p><i>Brynivegen 53, 2335 Stange, Norway</i></p>
-                </div>
+      </div>
+      <div class="section container d-flex justify-content-center vh-100 min-h-500 flex-column" id="program">
+        <div class="content d-flex flex-column text-center align-self-center">
+          <h1 class="text-center">PROGRAM</h1>
+          <hr />
+          <div class="row program pb-4 pt-4 reveal">
+            <div class="col text-end d-flex flex-column justify-content-between pt-3 pb-3">
+              <div class="time">
+                <time>kl.12:00</time>
               </div>
-              <div class="col-auto d-flex">
-                <div class="dot dot1"></div>
-                <div class="line"></div>
-                <div class="dot dot2"></div>
+              <div class="event">
+                <p><strong>Apertif</strong></p>
+                <p><i>Bryhni Søndre</i></p>
+                <p><i>Brynivegen 53, 2335 Stange</i></p>
               </div>
-              <div class="col text-start d-flex flex-column justify-content-between pt-3 pb-3">
-                <div class="event">
-                  <p><strong>Vielse</strong></p>
-                  <p><i>Hamar Domkirke</i></p>
-                  <p><i>Kirkebakken 14, 2317 Hamar, Norway</i></p>
-                </div>
-                <div class="time">
-                  <time>kl.19:00</time>
-                </div>
+              <div class="time">
+                <time>kl.17:00</time>
+              </div>
+              <div class="event-l">
+                <p><strong>Fest</strong></p>
+              </div>
+            </div>
+
+            <div class="col-auto d-flex">
+              <div class="dot dot1"></div>
+              <div class="dot dot3"></div>
+              <div class="line"></div>
+              <div class="dot dot2"></div>
+              <div class="dot dot4"></div>
+            </div>
+            <div class="col text-start d-flex flex-column justify-content-between pt-3 pb-3">
+              <div class="event">
+                <p><strong>Vielse</strong></p>
+                <p><i>Hamar Domkirke</i></p>
+                <p><i>Kirkebakken 14, 2317 Hamar</i></p>
+              </div>
+              <div class="time">
+                <time>kl.15:00</time>
+              </div>
+              <div class="event">
+                <p><strong>Middag</strong></p>
+              </div>
+              <div class="time-l">
+                <time>kl.21:00 -</time>
               </div>
             </div>
           </div>
         </div>
-        <div class="container d-flex flex-column vh-100 justify-content-center" id="overnatting">
-          <div class="content d-flex flex-column text-center align-self-center">
-            <h1>OVERNATTING</h1>
-            <hr />
-            <p class="reveal">For dere som kommer langveis fra er det mulig overnatting på:</p>
-          </div>
+        <div class="reveal pil align-self-center">
+          <a href="#overnatting" class="next reveal"><span></span></a>
         </div>
       </div>
-      <div class="d-flex vh-100 justify-content-center w-100" id="kart">
+
+      <div class="section container d-flex flex-column vh-100 justify-content-center min-h-500 flex-column" id="overnatting">
+        <div class="content d-flex flex-column text-center align-self-center">
+          <h1>OVERNATTING</h1>
+          <hr />
+          <p class="reveal">For de av dere som trenger overnatting er det overnattingsmuligheter på Bryhni Søndre og Radisson Blu Hamar. Det er ca. 10 min med bil/taxi fra festlokalet Bryhni Søndre til Hamar sentrum hvor Radisson Blu ligger. Det er derfor muligheter for å bestille felles maxitaxi ved slutten av festen.</p>
+        </div>
+        <a href="#dresscode" class="next reveal"><span></span></a>
+      </div>
+
+      <div class="section container d-flex justify-content-center vh-100 min-h-500 flex-column" id="dresscode">
+        <div class="content d-flex flex-column text-center align-self-center">
+          <h1>DRESSCODE</h1>
+          <hr />
+          <p class="reveal">Pent</p>
+        </div>
+        <div class="reveal pil align-self-center">
+          <a href="#gaveønsker" class="next reveal"><span></span></a>
+        </div>
+      </div>
+
+      <div class="section container d-flex justify-content-center vh-100 min-h-500 flex-column" id="gaveønsker">
+        <div class="content d-flex flex-column text-center align-self-center">
+          <h1>GAVEØNSKER</h1>
+          <hr />
+          <p class="reveal">Deres nærvær er den største gaven for oss! Dersom noen ønsker å gi en gave vil et bidrag til vår bryllupsreise være noe vi setter pris på.</p>
+        </div>
+        <div class="reveal pil align-self-center">
+          <a href="#kart" class="next reveal"><span></span></a>
+        </div>
+      </div>
+
+      <div class="section d-flex vh-100 justify-content-center w-100 min-h-500" id="kart">
         <!-- https://developers.google.com/maps/documentation/embed/quickstart -->
         <div style="-webkit-filter: grayscale(100%); filter: grayscale(100%)" class="align-self-center w-100">
-          <iframe width="100%" height="450" style="border: 0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqax3QDzhQUYRQtkykWmbRjU&key=AIzaSyCrta3raAZ9E_72R8NUzEgdsWUnKrkbHNs"></iframe>
+          <iframe width="100%" height="600" style="border: 0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqax3QDzhQUYRQtkykWmbRjU&key=AIzaSyCrta3raAZ9E_72R8NUzEgdsWUnKrkbHNs"></iframe>
         </div>
       </div>
+
       <footer>
         <div class="container dwnwnd-container text-center p-5">
           <p class="powered-by mb-4"><strong>WEBSITE POWERED BY:</strong></p>
