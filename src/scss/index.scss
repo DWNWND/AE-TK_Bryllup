@@ -4,10 +4,21 @@
 // Bootstrap main file
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+body {
+  overscroll-behavior: none;
+}
+
 main {
   height: 100%;
-  background-color: #535045;
-  // background: linear-gradient(0deg, #888371 0%, #686454 51%, #535045 85%);
+  background-color: #686454;
+}
+
+.invitasjon p {
+  font-style: italic;
+}
+.invitasjon p,
+.invitasjon-strong {
+  font-size: 1.2rem;
 }
 
 .navbar {
@@ -17,6 +28,9 @@ main {
 .header-svg {
   max-width: 450px;
   width: 90vw;
+  min-height: 50vh;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
 
 .navbar-toggler {
@@ -30,8 +44,20 @@ main {
   min-height: 35px;
 }
 
-.nav-item a {
-  color: #ffffff;
+.nav-item a,
+p {
+  color: #f9f7f5;
+  font-weight: 200;
+  font-family: "Nunito Sans", sans-serif;
+  // font-family: "Cormorant Garamond", serif;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #f9f7f5;
 }
 
 .custom-nav {
@@ -56,9 +82,7 @@ h1 {
 p,
 li {
   font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100, "YTLC" 500;
+  font-weight: 100;
   color: #ffffff;
 }
 
@@ -84,7 +108,7 @@ hr {
 
 .line {
   border-left: 1px solid #ffffff;
-  height: 250px;
+  height: 450px;
   align-self: center;
 }
 
@@ -98,18 +122,43 @@ hr {
 
 .dot1 {
   top: 27px;
-  left: 4px;
+  left: 11px;
 }
 
 .dot2 {
-  top: 170px;
+  top: 155px;
   right: 4px;
+}
+
+.dot3 {
+  top: 285px;
+  left: 4px;
+}
+
+.dot4 {
+  top: 415px;
+  right: 11px;
 }
 
 .event,
 .time {
-  height: 70px;
+  height: 120px;
   color: #ffffff;
+}
+.event-l,
+.time-l {
+  height: 30px;
+  color: #ffffff;
+}
+
+.time,
+.time-l {
+  font-family: "Cormorant Infant", serif;
+  font-size: 1.2rem;
+}
+
+.col {
+  width: 235px;
 }
 
 .reveal {
@@ -127,4 +176,113 @@ hr {
 .footer-logo {
   width: 70vw;
   max-width: 200px;
+}
+
+.content {
+  max-width: 680px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #f9f7f5;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: #f9f7f5 !important;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5%;
+  background-color: #f9f7f5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.min-h-500 {
+  min-height: 600px;
+}
+
+header {
+  padding-top: 60px;
+}
+
+.next:hover {
+  opacity: 0.5;
+}
+
+.next {
+  // align-self: flex-end;
+  // bottom: 0px;
+  // left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 "Josefin Sans";
+}
+
+.next {
+  padding-top: 60px;
+}
+
+.next span {
+  position: absolute;
+  // top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid #f9f7f581;
+  border-bottom: 3px solid #f9f7f581;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s;
+  animation: sdb04 2s;
+  -webkit-animation-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@media screen {
+  .next {
+    display: none;
+  }
 }

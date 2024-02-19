@@ -20,3 +20,23 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();
+
+const sections = document.querySelectorAll(".section");
+const navLi = document.querySelectorAll(".nav-link");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 150) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
