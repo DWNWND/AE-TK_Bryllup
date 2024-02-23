@@ -1,12 +1,10 @@
-// Edited variables
-@import "variables";
-
 // Bootstrap main file
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .navbar-toggler > .close {
   display: inline;
 }
+
 .navbar-toggler.collapsed > .close,
 .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
   display: none;
