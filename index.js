@@ -42,11 +42,12 @@ window.onscroll = () => {
 };
 
 const main = document.querySelector("main");
+const navbar = document.querySelector(".cost-nav");
+const hamburger = document.querySelector(".navbar-toggler");
 
 main.addEventListener("click", (e) => {
-  const navbar = document.querySelector(".navbar-collapse");
-
   if (navbar.classList.contains("show")) {
     navbar.classList.remove("show");
+    hamburger.classList.add("collapsed");
   }
 });

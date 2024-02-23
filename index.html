@@ -20,13 +20,15 @@
     <script defer type="module" src="/index.js"></script>
   </head>
   <body class="">
-    <nav class="navbar navbar-dark navbar-expand-sm position-fixed w-100 p-0">
+    <nav class="navbar navbar-expand-sm position-fixed w-100 p-0">
       <div class="container-fluid nav-container p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="my-1 mx-2 close x"></span>
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse cost-nav" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0 custom-nav d-flex gap-0 gap-md-2 gap-lg-3 gap-xl-5 flex-wrap justify-content-center align-content-center text-center">
+            <li class="nav-item"><a href="#invitasjon" class="nav-link hover-underline-animation invitasjon">INVITASJON</a></li>
             <li class="nav-item"><a href="#rsvp" class="nav-link hover-underline-animation rsvp">RSVP</a></li>
             <li class="nav-item"><a href="#program" class="nav-link hover-underline-animation program">PROGRAM</a></li>
             <li class="nav-item"><a href="#overnatting" class="nav-link hover-underline-animation overnatting">OVERNATTING</a></li>
@@ -39,7 +41,7 @@
     </nav>
 
     <main>
-      <header class="min-h-500 d-flex flex-column justify-content-center align-content-center">
+      <header class="section min-h-500 d-flex flex-column justify-content-center align-content-center" id="invitasjon">
         <div class="container d-flex flex-column justify-content-center align-content-center">
           <img src="/img/header.svg" class="img-fluid header-svg align-self-center" alt="..." />
           <div class="d-flex flex-column text-center align-self-center gap-3 content">
@@ -48,7 +50,7 @@
             <p class="invitasjon-strong"><strong>Gleder oss veldig til å feire dagen sammen med dere.</strong></p>
           </div>
           <div class="pil align-self-center">
-            <a href="#rsvp" class="next next-padding "><span></span></a>
+            <a href="#rsvp" class="next next-padding"><span></span></a>
           </div>
         </div>
       </header>
@@ -59,7 +61,7 @@
           <p class="reveal">Svar på hvor mange dere blir ønskes <strong>innen 22.04.2024</strong> og kan sendes til Torjus (tlf. 932 66 653) eller Andrea (tlf. 959 60 264). Gi gerne beskjed dersom det er allergier eller annet vi må ta hensyn til.</p>
         </div>
         <div class="pil align-self-center">
-          <a href="#program" class="next next-padding  reveal"><span></span></a>
+          <a href="#program" class="next next-padding reveal"><span></span></a>
         </div>
       </div>
       <div class="section container d-flex justify-content-center vh-100 min-h-500 flex-column" id="program">
@@ -121,7 +123,7 @@
           <p class="reveal">For de av dere som trenger overnatting er det overnattingsmuligheter på Bryhni Søndre og Radisson Blu Hamar. Det er ca. 10 min med bil/taxi fra festlokalet Bryhni Søndre til Hamar sentrum hvor Radisson Blu ligger. Det er derfor muligheter for å bestille felles maxitaxi ved slutten av festen.</p>
         </div>
         <div class="pil align-self-center">
-          <a href="#dresscode" class="next next-padding  reveal"><span></span></a>
+          <a href="#dresscode" class="next next-padding reveal"><span></span></a>
         </div>
       </div>
 

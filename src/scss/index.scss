@@ -4,12 +4,72 @@
 // Bootstrap main file
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+.navbar-toggler > .close {
+  display: inline;
+}
+.navbar-toggler.collapsed > .close,
+.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.close.active {
+  display: block;
+}
+
+.x::before,
+.x::after {
+  content: "";
+  display: block;
+  margin-top: -2px;
+  width: 20px;
+  height: 2px;
+  background: #786a5d;
+  border-radius: 1px;
+}
+
+.x::before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.x::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .cost-nav {
-  background: #4e4138;
+  background: #fffaf7;
 
   @include media-breakpoint-up(sm) {
     background: #686454;
   }
+}
+
+.nav-item a {
+  color: #786a5d;
+
+  @include media-breakpoint-up(sm) {
+    color: #f9f7f5;
+  }
+}
+
+.nav-link.active {
+  font-weight: 600;
+
+  color: #847668 !important;
+
+  @include media-breakpoint-up(sm) {
+    color: #f9f7f5 !important;
+  }
+}
+
+.nav-link:hover {
+  color: #f9f7f5;
 }
 
 body {
@@ -22,7 +82,7 @@ main {
 }
 
 .navbar {
-  z-index: 1;
+  z-index: 10;
 }
 
 .invitasjon p {
@@ -52,20 +112,18 @@ main {
   min-height: 35px;
 }
 
-.nav-item a,
 p {
   color: #f9f7f5;
+}
+
+.nav-item a,
+p {
   font-weight: 200;
   font-family: "Nunito Sans", sans-serif;
-  // font-family: "Cormorant Garamond", serif;
 }
 
 strong {
   font-weight: 600;
-}
-
-.nav-link:hover {
-  color: #f9f7f5;
 }
 
 .custom-nav {
@@ -194,11 +252,6 @@ hr {
   max-width: 680px;
 }
 
-.nav-link.active {
-  font-weight: 600;
-  color: #f9f7f5 !important;
-}
-
 .min-h-500 {
   min-height: 650px;
 }
@@ -234,7 +287,7 @@ header {
 
 .next span {
   position: absolute;
-  // top: 0;
+  z-index: 1;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -277,10 +330,6 @@ header {
   display: block;
 }
 @media (min-width: 576px) {
-  // .header-svg {
-  //   margin-top: 50px;
-  // }
-
   .next {
     display: none;
   }
