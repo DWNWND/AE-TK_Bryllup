@@ -51,3 +51,10 @@ main.addEventListener("click", (e) => {
     hamburger.classList.add("collapsed");
   }
 });
+
+navbar.addEventListener("click", (e) => {
+  if (navbar.classList.contains("show")) {
+    navbar.classList.remove("show");
+    hamburger.classList.add("collapsed");
+  }
+});
