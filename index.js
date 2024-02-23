@@ -40,3 +40,13 @@ window.onscroll = () => {
     }
   });
 };
+
+const main = document.querySelector("main");
+
+main.addEventListener("click", (e) => {
+  const navbar = document.querySelector(".navbar-collapse");
+
+  if (navbar.classList.contains("show")) {
+    navbar.classList.remove("show");
+  }
+});
