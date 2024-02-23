@@ -73,11 +73,14 @@
   }
 }
 
-.nav-link:hover {
+.nav-link:hover,
+a {
   color: #f9f7f5;
 }
 
-body {
+body,
+html,
+main {
   overscroll-behavior: none;
 }
 
