@@ -52,9 +52,9 @@ main.addEventListener("click", (e) => {
   }
 });
 
-navbar.addEventListener("click", (e) => {
-  if (navbar.classList.contains("show")) {
-    navbar.classList.remove("show");
-    hamburger.classList.add("collapsed");
-  }
-});
+// navbar.addEventListener("click", (e) => {
+//   if (navbar.classList.contains("show")) {
+//     navbar.classList.remove("show");
+//     hamburger.classList.add("collapsed");
+//   }
+// });

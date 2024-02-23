@@ -11864,8 +11864,13 @@ textarea.form-control-lg {
   display: none;
 }
 
+.navbar-toggler {
+  transition: 1.5s all ease;
+}
+
 .close {
   display: none;
+  transition: 1.5s all ease;
 }
 
 .close.active {
