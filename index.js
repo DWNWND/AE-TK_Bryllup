@@ -1,4 +1,6 @@
-// //https://alvarotrigo.com/blog/css-animations-scroll/
+//https://alvarotrigo.com/blog/css-animations-scroll/
+
+// console.log(document.location.hash);
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -28,7 +30,7 @@ window.onscroll = () => {
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 150) {
+    if (scrollY >= sectionTop - 150) {
       current = section.getAttribute("id");
     }
   });

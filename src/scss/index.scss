@@ -63,7 +63,6 @@
 
 .nav-link.active {
   font-weight: 600;
-
   color: #847668 !important;
 
   @include media-breakpoint-up(sm) {
@@ -71,9 +70,13 @@
   }
 }
 
-.nav-link:hover,
-a {
-  color: #f9f7f5;
+.nav-link:hover {
+  font-weight: 600;
+  color: #847668 !important;
+
+  @include media-breakpoint-up(sm) {
+    color: #f9f7f5 !important;
+  }
 }
 
 body,
@@ -86,10 +89,35 @@ iframe {
   height: 100vh;
 }
 
+// body {
+//   width: 100%;
+//   margin: 0;
+//   background-color: white;
+// }
+
 main {
   height: 100%;
   background-color: #686454;
 }
+
+// .snap-scroll {
+//   width: 100vw;
+//   height: 100vh;
+//   scroll-snap-points-y: repeat(300px);
+//   scroll-snap-type: y mandatory;
+//   scroll-snap-type: mandatory;
+//   overflow: auto;
+// }
+
+// .section {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100vw;
+//   height: 100vh;
+//   scroll-snap-align: start;
+//   transition: 1.5s all ease;
+// }
 
 .navbar {
   z-index: 10;
@@ -237,17 +265,17 @@ hr {
   width: 235px;
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1.5s all ease;
-}
+// .reveal {
+//   position: relative;
+//   transform: translateY(150px);
+//   opacity: 0;
+//   transition: 1.5s all ease;
+// }
 
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
+// .reveal.active {
+//   transform: translateY(0);
+//   opacity: 1;
+// }
 
 .footer-logo {
   width: 70vw;

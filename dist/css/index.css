@@ -11928,9 +11928,14 @@ textarea.form-control-lg {
   }
 }
 
-.nav-link:hover,
-a {
-  color: #f9f7f5;
+.nav-link:hover {
+  font-weight: 600;
+  color: #847668 !important;
+}
+@media (min-width: 576px) {
+  .nav-link:hover {
+    color: #f9f7f5 !important;
+  }
 }
 
 body,
@@ -12092,18 +12097,6 @@ hr {
 
 .col {
   width: 235px;
-}
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1.5s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .footer-logo {
