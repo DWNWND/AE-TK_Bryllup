@@ -84,6 +84,10 @@ main {
   overscroll-behavior: none;
 }
 
+iframe {
+  height: 100vh;
+}
+
 main {
   height: 100%;
   background-color: #686454;
@@ -333,7 +337,12 @@ header {
 .next {
   display: block;
 }
+
 @media (min-width: 576px) {
+  iframe {
+    height: 700px;
+  }
+
   .next {
     display: none;
   }
